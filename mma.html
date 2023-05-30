@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calcul du MMA</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mt-5 mb-4">FIMO SESSION 02 MAI - 02 JUIN</h1>
+      <h2 class="mt-5 mb-4 text-success">Calcul Du MMA</h2>
+      <div class="d-flex flex-wrap">
+        <div class="flex-fill pr-2">
+          <form>
+            <div class="form-group">
+              <label for="typeVehicule">Type de véhicule :</label>
+              <select id="typeVehicule" class="form-control">
+                <option value="isole">Véhicule isolé</option>
+                <option value="articule">Véhicule articulé</option>
+                <option value="train">Train routier</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="nbEssieux">Nombre d'essieux :</label>
+              <input type="number" id="nbEssieux" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="ptacPorteur">PTAC Porteur :</label>
+              <input type="number" id="ptacPorteur" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="ptra">PTRA :</label>
+              <input type="number" id="ptra" class="form-control" />
+            </div>
+          </form>
+        </div>
+        <div class="flex-fill pl-2">
+          <form>
+            <div class="form-group">
+              <label for="pvTracteur">Poids à vide du tracteur :</label>
+              <input type="number" id="pvTracteur" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="pvRemorque">Poids à vide de la remorque :</label>
+              <input type="number" id="pvRemorque" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="ptacRemorque">PTAC Remorque :</label>
+              <input type="number" id="ptacRemorque" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="ptacSemiRemorque">PTAC Semi-remorque :</label>
+              <input type="number" id="ptacSemiRemorque" class="form-control" />
+            </div>
+            <button
+              type="button"
+              id="btnCalculMMA"
+              class="btn btn-primary mb-3"
+            >
+              Calculer MMA
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="card mt-3 mb-5">
+        <div class="card-body">
+          <h5 class="card-title">Résultat du calcul</h5>
+          <p class="card-text">
+            Le MMA est : <span class="text-success" id="mmaDisplay"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-dark text-light py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>&copy; Mai 2023</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p>Designed and Created by Billel KHANFRI</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="mma.js"></script>
+  </body>
+</html>
+∂
