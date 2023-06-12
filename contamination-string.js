@@ -6,5 +6,7 @@ function contamination(text, char) {
     return firstText.map((x) => x.replace(x, char)).join("");
   }
 }
-
-console.log(contamination("billel", "R"));
+//replacements = (text, char) => text.split("").fill(char).join("");
+//replacements = (text, char) => char.repeat(text.length);
+replacements = (text, char) => text.replace(/./g, char);
+console.log(replacements("billel", "h"));
