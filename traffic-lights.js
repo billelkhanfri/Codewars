@@ -9,7 +9,4 @@ function updateLight(current) {
   }[current];
 }
 console.log(updateLight("green"));
-//replacements = (text, char) => text.split("").fill(char).join("");
-//replacements = (text, char) => char.repeat(text.length);
-replacements = (text, char) => text.replace(/./g, char);
-console.log(replacements("billel", "h"));
+
